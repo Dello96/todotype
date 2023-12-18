@@ -1,16 +1,16 @@
-import styled from "styled-components";
+// src/App.tsx
+import React from "react";
+import AddTodo from "./components/AddTodo";
+import TodoList from "./components/TodoCard";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <>
-      <MainBox></MainBox>
-    </>
+    <div>
+      <h1>Todo App</h1>
+      <AddTodo />
+      <TodoList />
+    </div>
   );
-}
-
-const MainBox = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
+};
 
 export default App;
